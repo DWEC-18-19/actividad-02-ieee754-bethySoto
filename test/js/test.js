@@ -27,7 +27,7 @@ describe('Pruebas números pequeños', () => {
     ieee754aBinario("-0").should.equal("10000000000000000000000000000000");
   });
        it('Prueba -5.3333282', () => {
-    hiker.ieee754aBinario("-5.3333282470703125").should.equal("11000000101010101010101010100000");
+    ieee754aBinario("-5.3333282470703125").should.equal("11000000101010101010101010100000");
   });
 
 });
@@ -59,7 +59,7 @@ describe('Pruebas notación exponencial', () => {
     ieee754aBinario(2.861023E-6).should.equal("00110110010000000000000000000000");
   });
     it('Número más grande', () => {
-    hiker.ieee754aBinario(3.4028172E38).should.equal("01111111011111111111111111100000");
+    ieee754aBinario(3.4028172E38).should.equal("01111111011111111111111111100000");
   });
     it('Número más pequeño', () => {
     ieee754aBinario(1.1754945E-38).should.equal("00000000100000000000000000000001");
